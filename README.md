@@ -1,2 +1,2 @@
-# home_inventory
+# Home Inventory
 Realtime home inventory application
