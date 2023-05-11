@@ -1,13 +1,11 @@
-library(tidyverse)
 library(shiny)
-library(RPostgreSQL)
+library(shinydashboard)
 
-ui <- fluidPage(titlePanel("Home Inventory"),
-                tags$head(tags$style(HTML('* { font-family: "Times New Roman"; }')))
+ui <- dashboardPage(
+  dashboardHeader(title = "Home Inventory"),
+  dashboardSidebar(),
+  dashboardBody()
 )
-
-server <- function(input, output, session) {
-  
-}
+server <- function(input, output) { }
 
 shinyApp(ui, server)
